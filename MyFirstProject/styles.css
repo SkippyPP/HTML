@@ -1,0 +1,42 @@
+body
+{
+    font-family:'Times New Roman', Times, serif; 
+    font-size:larger ;
+    background-color: bisque;
+}
+p
+{
+    color: green;
+    font-size: 20px;
+}
+tr
+{
+    background-color: rgb(130, 165, 89); 
+    color: aliceblue;
+}
+h5,h6
+{
+    font-size: 2rem;
+    color: rgb(230,0,210);
+}
+ol>ul
+{
+background-color: aqua;
+color: #FFF;
+}
+td{
+    height: 6rem;
+    width: 6rem;
+}
+.blue{
+    background-color: teal;
+}
+.black{
+    background-color: black;
+}
+#red{
+    background-color: red;
+}
+
+
+/*This is how you comment in CSS*/
