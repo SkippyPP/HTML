@@ -21,6 +21,7 @@ body{
     color: rgb(174, 217, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: linear-gradient(rgb(77, 94, 247),rgb(54, 67, 138),rgb(186, 105, 253));
+    margin-left: 5px;
     
     
 }
@@ -53,4 +54,8 @@ img{
     width: 25%;
     height: 25%;
     margin-left: 300px;
+}
+.title{
+    font-size: 100px;
+    text-align: center;
 }
