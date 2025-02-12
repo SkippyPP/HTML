@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Demos
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="student_styles.css">
+
+    <style>
+        li{
+            text-decoration: none;
+            display:inline;
+            margin-right:100px;
+        }
+        nav{
+            background-color: #464646;
+            padding: 5px;
+            text-align: center;
+        }
+        a{
+            color: #fff;
+            margin: 0px;
+        }
+        a:link{ color: chocolate;}
+        a:visited{color: cadetblue;}
+        a:hover{color:darkslateblue;}
+        a:active{color:darkcyan;}
+        .crosshair{
+            cursor:crosshair;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--code for implementing a navbar-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://papas-freezeria.io" target="_blank">Home</a></li>
+                <li><a href="https://coolmathgames.com" target="_blank">Contacts</a></li>
+                <li><a></a>FAQ</li>
+                <li><a></a>Reviews</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--box model-->
+    <div class="kitten">
+
+    </div>
+    <div class="doug">
+        <h2>my content</h2>
+    </div>
+    <br><br><br><br>
+    <!--CSS grid-->
+    <div class="container">
+        <div class="header">
+            <h2>Abel Tesfaye</h2>
+        </div>
+        <div class="album">
+            <a href="https://open.spotify.com/album/7zCODUHkfuRxsUjtuzNqbd" target="_blank">House Of Balloons (Original)</a><br>
+            <a href="https://open.spotify.com/album/6F87lH0I09qlrzvCCKc7lz" target="_blank">Thursday (Original)</a><br>
+            <a href="https://open.spotify.com/album/04hy4jb1GDD00otiwzsFUB" target="_blank">Echos Of Silence (Original)</a><br>
+            <a href="https://open.spotify.com/album/2XGEyGU76kj55OdHWynX0S" target="_blank">Trilogy</a>
+        </div>
+        <div class="content">
+            <h3>The Weeknd</h3><p>House of Balloons, Thursday, Echo of Silence, These were the three discs that defined TheWeeknd and helped him get out of poverty. These discs were the renaissance of dark RnB with being heavily influenced by Michael Jackson the Weeknd showed different sides of music that took the world for shock.</p>
+        </div>
+        <!-- <div class="footer"> -->
+            <div class="footer item1"><img src="./res/HOB.jpg" width="200" height="200" alt=""></div>
+            <div class="footer item2"><img src="./res/Thursday.jfif" width="200" height="200" alt=""></div>
+            <div class="footer item3"><img src="./res/EOF.jfif" width="200" height="200" alt="" ></div>
+            <div class="footer item4"><img src="./res/TRILL.jfif" width="200" height="200" alt="" ></div>
+        <!-- </div> -->
+    </div>
+
+    <div>
+        <h1>Flexible Boxes</h1>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+
+    <div style="margin:5rem">
+        <div class="card">
+            <img src="./res/dog.jpg" alt="" style="width:100%">
+            <p>Cute Dog</p>
+        </div> 
+
+        <div class="round_card">
+            <img src="./res/cat.png" alt="" style="width:100%; border-radius:10px 10px 0 0">
+            <p>Cute Cat</p>
+        </div> 
+
+        <div class="product_card">
+            <br>
+            <img src="./res/bunny.png" alt="" style="width:95%; border-radius:10px">
+            <h4><b>Bunnies!</b></h4>
+            <p style="color: white;">$3.99</p>
+            <p>Bunny Cat</p>
+        </div> 
+    </div>
+
+    <!--carousel sample without css and javascript-->
+    <div id="demo" class="carousel slide" style="width:50%;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./res/bunny.png" alt="" style="width:100%" class="d-block";>
+            </div>
+            <div class="carousel-item">
+                <img src="./res/cat.png" alt="" style="width:100%" class="d-block";>
+            </div>
+            <div class="carousel-item">
+                <img src="./res/dog.jpg" alt="" style="width:100%" class="d-block";>
+            </div>
+        </div>
+        <button class="carousel-control-prev text-white-50 bg-dark" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next text-white-50 bg-dark" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div>
+        <p class="crosshair">This is a cursor change paragraph.</p><br><br>
+        <p><a href="https://getbootstrap.com/" target="_blank"> tthis is a link im pretty sure</a></p><br><br>
+        <div class="picture">
+            <img src = "./res/man.png">
+        </div>
+    </div>
+</body>
+
+</html>
