@@ -1,0 +1,57 @@
+/*list of variables for the css*/
+:root{
+    --ff-style: "Bungee Shade", "Segoi UI", "sans-serif";
+    --fs-normal: 1rem;
+    --fs-bigger: 1.5rem;
+
+    --fw-normal: 400;
+    --fw-bolder: 700;
+
+    --clr-white: #fff;
+    --clr-charcoal: #131313;
+    --clr-black: black;
+    --clr-yellow: #fcb045;
+    --clr-red: #fd1d1d;
+    --clr-purple: #833ab4;
+}
+/**************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*NavBar Styling Classes and IDs*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-style);
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    background: var(--clr-charcoal);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
