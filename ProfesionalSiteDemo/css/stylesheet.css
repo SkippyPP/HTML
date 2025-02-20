@@ -8,11 +8,16 @@
     --fw-bolder: 700;
 
     --clr-white: #fff;
-    --clr-charcoal: #131313;
+    --clr-gray: #747474;
     --clr-black: black;
     --clr-yellow: #fcb045;
     --clr-red: #fd1d1d;
     --clr-purple: #833ab4;
+    --clr-blue: #0000ff;
+    --clr-lightblue: #4040ff;
+    --clr-lightpurple: #5a5ac9;
+
+
 }
 /**************************************************************************************************************************************************************************************************************************************************************************************/
 
@@ -28,7 +33,7 @@
 
 
 .navbar{
-    background: var(--clr-charcoal);
+    background: var(--clr-gray);
     height: 6rem;
     display: flex;
     justify-content: center;
@@ -38,7 +43,65 @@
     z-index: 999;
     
 }
-
+.navbar_wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 1;
+}
+.navbar_menu_container{
+    display: flex;
+    align-items: center;
+    list-style: none;   /*same as text-decoration: none;*/
+}
+.navbar_link{
+    height: 6rem;
+}
+.navbar_link_item{
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 8rem;
+    text-decoration: none; /*removes the underline from the link*/
+    transition: all .3s ease;
+}
+.navbar_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+.navbar_link_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--clr-white);
+    background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
+    border-radius: 8px;
+}
+#navbar_logo{
+    background: linear-gradient(to top, var(--clr-lightblue),var(--clr-lightpurple));
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar_link_button:hover,.navbar_link_item:hover,#navbar_logo:hover{
+    color: var(--clr-blue) ;
+}
 
 
 
