@@ -8,14 +8,14 @@
     --fw-bolder: 700;
 
     --clr-white: #fff;
-    --clr-gray: #747474;
+    --clr-gray: #8d8989;
     --clr-black: black;
     --clr-yellow: #fcb045;
     --clr-red: #fd1d1d;
     --clr-purple: #833ab4;
     --clr-blue: #0000ff;
-    --clr-lightblue: #4040ff;
-    --clr-lightpurple: #5a5ac9;
+    --clr-lightblue: #a4a4fc;
+    --clr-lightpurple: #7575d4;
 
 
 }
@@ -102,10 +102,149 @@
 .navbar_link_button:hover,.navbar_link_item:hover,#navbar_logo:hover{
     color: var(--clr-blue) ;
 }
+/*************************************************HERO SECTION STYLING***************************************************************************************************************/
+.hero{
+    background: var(--clr-black);
+    padding: 100px 0px;
+    background: linear-gradient(to top,gray 10%, var(--clr-gray), black);
+}
+.hero_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
 
+}
+.hero_heading{
+    color: var(--clr-lightblue);
+    font-size: 4rem;
 
+}
+.hero_description{
+    font-size: 2rem;
+    background: var(--clr-lightpurple);
+    background: linear-gradient(to bottom, var(--clr-purple), #da22ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.main_button{
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 20px 60px;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
+   position: relative;
+   transition: all .35s;
+}
+.main_button a{
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1.8rem;
+    z-index: 2;
+    position: relative;
+}
+.main_button:hover{
+    
+}
+.main_button:after{
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    background:var(--clr-purple);
+    transition:  all .35s;
+    position: absolute;
+    content: '';
+}
+.main_button:hover:after{
+    width: 100%;
 
+}
+span{
+
+}
+/************************************************Services Section Styling***************************************************************************************************/
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(to bottom,gray 10%, var(--clr-gray), black);
+
+}
+.services h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+.services_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--clr-white);
+    margin: 1rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 8px; /*0.5rem*/
+    background-image: linear-gradient(to top, var(--clr-blue),var(--clr-lightblue));
+    transition: 0.3s ease-in-out;
+}
+
+.services_card h2{
+    text-align: center;
+}
+.services_card p{
+    text-align: center;
+    font-size: var(1.2rem);
+    margin-top: 1rem;
+}
+.services_button{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
+.services_button button{
+    color: var(--clr-white);
+    background: var(--clr-blue);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--fs-normal);
+}
+.services_card:hover{
+    cursor: help;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+/*For repeated items (cards) - AKA nth Child */
+.services_card:nth-child(2){
+    /*fall back for old browsers - for example, Chrome <25*/
+    background: lightblue;
+    background: linear-gradient(to left, var(--clr-purple),var(--clr-lightpurple));
+}
+.services_card:nth-child(3){
+    background: linear-gradient(to right, var(--clr-purple),var(--clr-lightpurple));
+
+}
 
 
 
