@@ -1,5 +1,5 @@
 /*list of variables for the css*/
-:root{
+:root {
     --ff-style: "Bungee Shade", "Segoi UI", "sans-serif";
     --fs-normal: 1rem;
     --fs-bigger: 1.5rem;
@@ -19,11 +19,12 @@
 
 
 }
+
 /**************************************************************************************************************************************************************************************************************************************************************************************/
 
 /*NavBar Styling Classes and IDs*/
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@
 }
 
 
-.navbar{
+.navbar {
     background: var(--clr-gray);
     height: 6rem;
     display: flex;
@@ -41,9 +42,10 @@
     top: 0;
     position: sticky;
     z-index: 999;
-    
+
 }
-.navbar_wrapper{
+
+.navbar_wrapper {
     display: flex;
     justify-content: space-between;
     height: 6rem;
@@ -52,32 +54,39 @@
     padding: 0 3rem;
     z-index: 1;
 }
-.navbar_menu_container{
+
+.navbar_menu_container {
     display: flex;
     align-items: center;
-    list-style: none;   /*same as text-decoration: none;*/
+    list-style: none;
+    /*same as text-decoration: none;*/
 }
-.navbar_link{
+
+.navbar_link {
     height: 6rem;
 }
-.navbar_link_item{
+
+.navbar_link_item {
     color: var(--clr-white);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 8rem;
-    text-decoration: none; /*removes the underline from the link*/
+    text-decoration: none;
+    /*removes the underline from the link*/
     transition: all .3s ease;
 }
-.navbar_button{
+
+.navbar_button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 0 1rem;
 }
-.navbar_link_button{
+
+.navbar_link_button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,8 +98,9 @@
     background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
     border-radius: 8px;
 }
-#navbar_logo{
-    background: linear-gradient(to top, var(--clr-lightblue),var(--clr-lightpurple));
+
+#navbar_logo {
+    background: linear-gradient(to top, var(--clr-lightblue), var(--clr-lightpurple));
     background-size: 100%;
     display: flex;
     align-items: center;
@@ -99,16 +109,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.navbar_link_button:hover,.navbar_link_item:hover,#navbar_logo:hover{
-    color: var(--clr-blue) ;
+
+.navbar_link_button:hover,
+.navbar_link_item:hover,
+#navbar_logo:hover {
+    color: var(--clr-blue);
 }
+
 /*************************************************HERO SECTION STYLING***************************************************************************************************************/
-.hero{
+.hero {
     background: var(--clr-black);
     padding: 100px 0px;
-    background: linear-gradient(to top,gray 10%, var(--clr-gray), black);
+    background: linear-gradient(to top, gray 10%, var(--clr-gray), black);
 }
-.hero_wrapper{
+
+.hero_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,12 +133,14 @@
     padding: 2rem;
 
 }
-.hero_heading{
+
+.hero_heading {
     color: var(--clr-lightblue);
     font-size: 4rem;
 
 }
-.hero_description{
+
+.hero_description {
     font-size: 2rem;
     background: var(--clr-lightpurple);
     background: linear-gradient(to bottom, var(--clr-purple), #da22ff);
@@ -133,7 +150,8 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-.main_button{
+
+.main_button {
     margin-top: 1.5rem;
     border: none;
     border-radius: 8px;
@@ -141,62 +159,67 @@
     padding: 20px 60px;
     cursor: pointer;
     background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
-   position: relative;
-   transition: all .35s;
+    position: relative;
+    transition: all .35s;
 }
-.main_button a{
+
+.main_button a {
     color: var(--clr-white);
     text-decoration: none;
     font-size: 1.8rem;
     z-index: 2;
     position: relative;
 }
-.main_button:hover{
-    
-}
-.main_button:after{
+
+.main_button:hover {}
+
+.main_button:after {
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     border-radius: 8px;
-    background:var(--clr-purple);
-    transition:  all .35s;
+    background: var(--clr-purple);
+    transition: all .35s;
     position: absolute;
     content: '';
 }
-.main_button:hover:after{
+
+.main_button:hover:after {
     width: 100%;
 
 }
-span{
 
-}
+span {}
+
 /************************************************Services Section Styling***************************************************************************************************/
-.services{
+.services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     padding: 100px 0px;
-    background: linear-gradient(to bottom,gray 10%, var(--clr-gray), black);
+    background: linear-gradient(to bottom, gray 10%, var(--clr-gray), black);
 
 }
-.services h1{
+
+.services h1 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.services_wrapper{
+
+.services_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
 }
-.services_card{
+
+.services_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,25 +227,29 @@ span{
     margin: 1rem;
     height: 20rem;
     width: 20rem;
-    border-radius: 8px; /*0.5rem*/
-    background-image: linear-gradient(to top, var(--clr-blue),var(--clr-lightblue));
+    border-radius: 8px;
+    /*0.5rem*/
+    background-image: linear-gradient(to top, var(--clr-blue), var(--clr-lightblue));
     transition: 0.3s ease-in-out;
 }
 
-.services_card h2{
+.services_card h2 {
     text-align: center;
 }
-.services_card p{
+
+.services_card p {
     text-align: center;
     font-size: var(1.2rem);
     margin-top: 1rem;
 }
-.services_button{
+
+.services_button {
     display: flex;
     margin: 1rem;
     justify-content: center;
 }
-.services_button button{
+
+.services_button button {
     color: var(--clr-white);
     background: var(--clr-blue);
     padding: 10px 20px;
@@ -230,30 +257,351 @@ span{
     border-radius: 8px;
     font-size: var(--fs-normal);
 }
-.services_card:hover{
+
+.services_card:hover {
     cursor: help;
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
+
 /*For repeated items (cards) - AKA nth Child */
-.services_card:nth-child(2){
+.services_card:nth-child(2) {
     /*fall back for old browsers - for example, Chrome <25*/
     background: lightblue;
-    background: linear-gradient(to left, var(--clr-purple),var(--clr-lightpurple));
-}
-.services_card:nth-child(3){
-    background: linear-gradient(to right, var(--clr-purple),var(--clr-lightpurple));
-
+    background: linear-gradient(to left, var(--clr-purple), var(--clr-lightpurple));
 }
 
+.services_card:nth-child(3) {
+    background: linear-gradient(to right, var(--clr-purple), var(--clr-lightpurple));
 
+}
 
+/****************************************************************Features Section Styling*************************************************************************************************************************************************************************************************************************************/
+.features {
+    background-color: var(--clr-black);
+}
 
+.features_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 85%;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 5rem;
+}
 
+.features_content {
+    color: var(--clr-white);
 
+}
 
+.features_content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
 
+.features_content h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+}
 
+.features_content p {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
 
+.features_image {
+    text-align: center;
+    font-size: 12rem;
+}
 
+.image_card {
+    margin: 10px;
+    margin-left: 1rem;
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, var(--clr-lightblue), var(--clr-blue));
+}
 
+/************************************************************************************Footer Styling Section**********************************************************************************************************************************************************/
+.footer {
+    background: linear-gradient(to top, gray 10%, var(--clr-gray), black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_links_wrapper {
+    display: flex;
+
+}
+
+.footer_link_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    text-align: left;
+    width: 10rem;
+    box-sizing: border-box;
+}
+
+.footer_link_item h2 {
+    color: var(--clr-white);
+    margin-bottom: 1rem;
+}
+
+.footer_link_item a {
+    color: var(--clr-white);
+    text-decoration: none;
+    margin-bottom: .5rem;
+    transition: .3s ease-in;
+}
+
+.footer_link_item a:hover {
+    color: var(--clr-blue);
+    transition: .3s ease-in;
+}
+
+.social_media {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.social_media_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+}
+
+#footer_logo {
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.social_media_wrapper>p {
+    color: var(--clr-white);
+}
+
+.social_media_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+}
+
+.social_media_link {
+    color: var(--clr-white);
+    font-size: var(--fs-bigger);
+}
+
+.social_media_icons a:hover {
+    color: var(--clr-blue);
+    transform: scale(2);
+    transition: .25s ease-in-out;
+}
+
+.social_media_icons a {
+    transition: .25s ease-in-out;
+}
+
+/*****************************************************************************************************************************************************************/
+/********************************************MOBILE STYLING AND MEDIA QUERIES********************************************************************************************************************/
+@media screen and (max-width:600px) {
+    .hero_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 85%;
+        margin: 0 auto;
+    }
+
+    .hero_heading {
+        font-size: 5rem;
+    }
+
+    .hero_description {
+        font-size: 2.5rem;
+    }
+
+    .main_button {
+        width: 53%;
+        height: 100%;
+        padding: 0px;
+    }
+    .main_button a{
+        font-size: 1rem;
+    }
+
+    .services {
+        margin: 0;
+        padding: 0;
+    }
+    .services_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .services_card{
+        height: 20rem;
+        width: 20rem;
+    }
+    .features_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 85%;
+        margin: 0 auto;
+
+    }
+    .features_content{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .features_image{
+        font-size: 9rem;
+    }
+    .features_content h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .features_content h2{
+        font-size: 2rem;
+
+    }
+    .features_content h1{
+        font-size: 1.5rem;
+
+    }
+    .features_content .main_button{
+        width: 53%;
+        height: 3rem;
+    }
+    .image_card{
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
+    .footer_links_wrapper{
+        flex-direction: column;
+    }
+    .footer_link_item{
+        display: flex;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 100%;
+    }
+    .footer_link_item h2{
+        margin: 0 auto;
+    }
+    .footer_link_item a{
+      margin: 0 auto;
+    }
+    .social_media_wrapper{
+        flex-direction: column;
+    }
+    /**********************Styling for Mobile Navbar********************************************************************************************************************************/
+    #mobile_menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
+
+    }
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 5px;
+        margin: 5px auto;
+        display: block;
+        cursor: pointer;
+        background: var(--clr-white);
+        transition: all .8s ease-in-out;
+    }
+    .navbar_wrapper{
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        z-index: 1;
+        padding: 0;
+    }
+    .navbar_menu_container{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        z-index: -1;
+        transition: all .8s ease-in-out;
+    }
+    .navbar_menu_container.active{
+        top: 100%;
+        opacity: 1;
+        z-index: 99;
+        font-size: var(--fs-bigger);
+        height: 60vh;
+        transition: all .5s ease-in-out;
+        background: var(--clr-blue);
+    }
+    #navbar_logo{
+        padding-left: 2rem;
+    }
+    .navbar_link{
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        display: table;
+    }
+    .navbar_link_item{
+        width: 100%;
+    }
+    .navbar_link_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }
+    #mobile_menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile_menu.is-active .bar:nth-child(1){
+        transform: translateY(9px) rotate(45deg);
+    }
+    #mobile_menu.is-active .bar:nth-child(3){
+        transform: translateY(-11px) rotate(-45deg);
+    }
+}
