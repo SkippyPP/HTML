@@ -19,14 +19,13 @@ main{
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0px 2px 2px 2px rgb(116, 115, 115);
+    box-shadow: 0px 1rem 0.5rem -0.5rem rgb(116, 115, 115);
     margin: 30px 30px;
     padding: 15px;
     border-radius: 10px;
     max-width: 400px;
     height: 15rem;
     width: 20rem;
-
 }
 .img_container{
     display: flex;
@@ -50,6 +49,7 @@ main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
         width: auto;
     }
     .card{

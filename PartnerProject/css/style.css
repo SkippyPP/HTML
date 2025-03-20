@@ -1,0 +1,296 @@
+/**********************Styles / Colors***********************************************************************/
+:root {
+    --ff-style:"Raleway", sans-serif;;
+
+    --fs-normal: 1rem;
+    --fs-bigger: 1.5rem;
+    --fs-biggest: 2rem;
+
+    --fw-normal: 400;
+    --fw-bolder: 700;
+
+    --clr-white: #FFF;
+
+    --clr-black: #231f20;
+    --clr-yellow: #fde021;
+    --clr-red: #fd1d1d;
+
+    --clr-green: #80bc00;
+    --clr-blue: #002856;
+    --clr-aqua: #0093c9;
+
+
+    --clr-orange: #ff4d00;
+
+}
+
+/*******************************************Navbar Styling**************************************************************************************************************************************/
+body {
+    background-image: url('/Graphics/Background3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-style);
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    background: var(--clr-blue);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+
+}
+
+.navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 1;
+}
+
+.navbar_menu_container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar_link {
+    height: 6rem;
+}
+
+.navbar_link_item {
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 8rem;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.navbar_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.navbar_link_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--clr-white);
+    background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
+    border-radius: 8px;
+}
+
+.navbar_logo {
+    
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: var(--fs-biggest);
+}
+
+.navbar_link_button:hover,
+.navbar_link_item:hover,
+#navbar_logo:hover {
+    color: var();
+}
+
+/*********************************************Home Section Styling****************************************************************************************************************************************/
+.Home_Summary{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--clr-black);
+    text-transform: var(--fs-biggest)
+}
+.Home_Summary2{
+    align-content: center;
+    margin-right: 300px;
+}
+
+.home_introduction{
+    margin-top: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;    
+}
+.home_introduction h1{
+    font-size: 3rem;
+    color: rgb(3, 100, 0)
+    
+}
+.home_carousel{
+    width: 27vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 42%;
+    left: 75%;
+    overflow: hidden;
+    border: 20px solid var(--clr-green);
+    border-radius: 8px;
+    box-shadow: 10px 25px 20px var(--clr-black);
+}
+.home_wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+width: 100%;
+}
+/*********************************************About Us Section Styling************************************************************************************************************************************/
+
+/*********************************************Faq Section Styling*****************************************************************************************************************************************/
+
+/*********************************************Contact Section Styling*************************************************************************************************************************************/
+
+/*********************************************Footer Section Styling**************************************************************************************************************************************/
+.footer {
+    background: var(--clr-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.footer_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_links_wrapper {
+    display: flex;
+
+}
+
+.footer_link_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    text-align: left;
+    width: 10rem;
+    box-sizing: border-box;
+}
+
+.footer_link_item h2 {
+    color: var(--clr-white);
+    margin-bottom: 1rem;
+}
+
+.footer_link_item a {
+    color: var(--clr-white);
+    text-decoration: none;
+    margin-bottom: .5rem;
+    transition: .3s ease-in;
+}
+
+.footer_link_item a:hover {
+    color: var(--clr-green);
+    transition: .3s ease-in;
+}
+
+.social_media {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.social_media_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 3rem auto 0 auto;
+}
+
+#footer_logo {
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.social_media_wrapper>p {
+    color: var(--clr-white);
+}
+
+.social_media_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+}
+
+.social_media_link {
+    color: var(--clr-white);
+    font-size: var(--fs-bigger);
+}
+
+.social_media_icons a:hover {
+    color: var(--clr-green);
+    transform: scale(2);
+    transition: .25s ease-in-out;
+}
+
+.social_media_icons a {
+    transition: .25s ease-in-out;
+}
