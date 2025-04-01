@@ -2,7 +2,7 @@
 :root {
     --ff-style:"Raleway", sans-serif;;
 
-    --fs-normal: 1rem;
+    --fs-normal: 0.9rem;
     --fs-bigger: 1.5rem;
     --fs-biggest: 2rem;
 
@@ -127,9 +127,9 @@ body {
     color: var(--clr-black);
     text-transform: var(--fs-biggest)
 }
-.Home_Summary2{
+.About_Us_Summary{
     align-content: center;
-    margin-right: 300px;
+    margin-right: 900px;
 }
 
 .home_introduction{
@@ -146,11 +146,10 @@ width: 100%;
     
 }
 .home_carousel{
-    width: 27vmin;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 42%;
-    left: 75%;
+    width: 60vmin;
+    height: 65vmin;
+    position: relative;
+margin-top: 2rem;
     overflow: hidden;
     border: 20px solid var(--clr-green);
     border-radius: 8px;
@@ -191,9 +190,118 @@ img{
 width: 100%;
 }
 /*********************************************About Us Section Styling************************************************************************************************************************************/
-
+.instructor_intro{
+    margin: 2vmin 15vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
+    gap: 20rem;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.instructor_image{
+    grid-column: 2;
+    max-height: 15rem;
+    max-width: 15rem;
+}
+.instructor_bio{
+    grid-column: 1;
+    font-size: var(--fs-normal);
+}
 /*********************************************Faq Section Styling*****************************************************************************************************************************************/
+.FAQ_Questions{
+    text-align: center;
+    margin-top: 50px;
+    text-size-adjust: var(--fs-biggest);
+    text-shadow: 1rem;
+}
+.card1{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(242, 250, 250);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s;
+    margin-left: 440px;
 
+}
+.card2{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(242, 250, 250);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s;
+    margin-left: 440px;
+
+}
+.card3{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(242, 250, 250);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s;
+    margin-left: 440px;
+
+}
+.card4{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(242, 250, 250);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s;
+    margin-left: 440px;
+
+}
+.card5{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(242, 250, 250);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s;
+    margin-left: 440px;
+
+}
+.card6{
+    width: 50%;
+    height: 20%;
+    background-color: rgb(242, 250, 250);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s;
+    margin-left: 440px;
+
+}
+.card1:hover,.roundCard:hover{
+    box-shadow: 0 16px 32px 0 black;
+}
+.card2:hover,.roundCard:hover{
+    box-shadow: 0 16px 32px 0 black;
+}
+.card3:hover,.roundCard:hover{
+    box-shadow: 0 16px 32px 0 black;
+}
+.card4:hover,.roundCard:hover{
+    box-shadow: 0 16px 32px 0 black;
+}
+.card5:hover,.roundCard:hover{
+    box-shadow: 0 16px 32px 0 black;
+}
+.card6:hover,.roundCard:hover{
+    box-shadow: 0 16px 32px 0 black;
+}
 /*********************************************Contact Section Styling*************************************************************************************************************************************/
 
 /*********************************************Footer Section Styling**************************************************************************************************************************************/
@@ -203,7 +311,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 180px;
 }
 
 .footer_links {
