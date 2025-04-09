@@ -239,6 +239,19 @@ img {
     font-size: var(--fs-normal);
 }
 
+.content_infromation {
+    margin: 2vmin 15vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
+    gap: 20rem;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .learned {
     display: flex;
     flex-wrap: nowrap;
@@ -246,7 +259,17 @@ img {
     align-content: center;
     justify-content: center;
     margin: 3rem 5rem;
+    grid-column: 2;
+}
 
+.project_links {
+    grid-column: 1;
+
+}
+
+.project_links a {
+    text-decoration: none;
+    color: var(--clr-blue);
 }
 
 .bpa_summary {
@@ -255,116 +278,76 @@ img {
 }
 
 /*********************************************Faq Section Styling*****************************************************************************************************************************************/
+.faq > h1{
+    text-align: center;
+    color: var(--clr-green);
+    font-size: var(--fs-biggest);
+}
+
 .FAQ_Questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
     text-align: center;
     align-content: center;
     justify-content: center;
-    margin: 0 auto;
-
     text-shadow: 1rem;
 }
 
-.card1 {
-    margin: 0 50rem;
-    width: 50%;
-    max-width: 40rem;
-    background-color: rgb(242, 250, 250);
-    text-align: center;
+.FAQ_Questions>h1 {
+    font-size: var(--fs-biggest);
+    color: var(--clr-green);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 1rem;
+    height: 20rem;
+    width: 40rem;
+    border-radius: 8px;
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
     box-shadow: 0 4px 8px 0 black;
-    transition: .3s;
-    
-
+    transition: .3s ease-in-out;
 }
 
-.card2 {
-    width: 50%;
-    height: 20%;
-    background-color: rgb(242, 250, 250);
-    text-align: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 black;
-    transition: .3s;
-
-
+.card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.card3 {
-    width: 50%;
-    height: 20%;
-    background-color: rgb(242, 250, 250);
-    text-align: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 black;
-    transition: .3s;
-
-
+.card:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
 }
 
-.card4 {
-    width: 50%;
-    height: 20%;
-    background-color: rgb(242, 250, 250);
-    text-align: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 black;
-    transition: .3s;
-
-
+.card:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
 }
 
-.card5 {
-    width: 50%;
-    height: 20%;
-    background-color: rgb(242, 250, 250);
-    text-align: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 black;
-    transition: .3s;
-
-
+.card:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
 }
 
-.card6 {
-    width: 50%;
-    height: 20%;
-    background-color: rgb(242, 250, 250);
-    text-align: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 black;
-    transition: .3s;
-
-
+.card:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
 }
 
-.card1:hover,
-.roundCard:hover {
+.card:nth-child(6) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.card:hover {
     box-shadow: 0 16px 32px 0 black;
-}
-
-.card2:hover,
-.roundCard:hover {
-    box-shadow: 0 16px 32px 0 black;
-}
-
-.card3:hover,
-.roundCard:hover {
-    box-shadow: 0 16px 32px 0 black;
-}
-
-.card4:hover,
-.roundCard:hover {
-    box-shadow: 0 16px 32px 0 black;
-}
-
-.card5:hover,
-.roundCard:hover {
-    box-shadow: 0 16px 32px 0 black;
-}
-
-.card6:hover,
-.roundCard:hover {
-    box-shadow: 0 16px 32px 0 black;
+    background-color: var(--clr-green);
+    transition: .3s ease-in-out;
 }
 
 /*********************************************Contact Section Styling*************************************************************************************************************************************/
@@ -375,11 +358,51 @@ img {
     margin-top: 50px;
 }
 
-.Benifits_List {
+.benifits_wrapper {
+    display: grid;
     text-align: center;
-    font-size: larger;
-    margin-top: 50px;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 1rem;
 }
+
+.benifit_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    height: 20rem;
+    width: 40rem;
+    border-radius: 8px;
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    box-shadow: 0 4px 8px 0 black;
+    transition: .3s ease-in-out;
+}
+
+.benifit_button {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.benifit_button button {
+    color: var(--clr-white);
+    background: var(--clr-green);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--fs-normal);
+}
+
+.benifit_button a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1.8rem;
+    z-index: 2;
+    position: relative;
+}
+
 
 /*********************************************Footer Section Styling**************************************************************************************************************************************/
 .footer {
@@ -478,4 +501,113 @@ img {
 
 .social_media_icons a {
     transition: .25s ease-in-out;
+}
+
+/*********************************************************************Mobile Styling and Media Queries*****************************************************************************************************/
+@media screen and (max-width:800px){
+    /****************************************Navbar***********************************************************************************************/
+    #mobile_menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
+
+    }
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 5px;
+        margin: 5px auto;
+        display: block;
+        cursor: pointer;
+        background: var(--clr-white);
+        transition: all .8s ease-in-out;
+    }
+    .navbar_wrapper{
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        z-index: 1;
+        padding: 0;
+    }
+    .navbar_menu_container{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        z-index: -1;
+        transition: all .8s ease-in-out;
+    }
+    .navbar_menu_container.active{
+        top: 100%;
+        opacity: 1;
+        z-index: 99;
+        font-size: var(--fs-bigger);
+        height: 60vh;
+        transition: all .5s ease-in-out;
+        background: var(--clr-blue);
+    }
+    #navbar_logo{
+        padding-left: 2rem;
+    }
+    .navbar_link{
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        display: table;
+    }
+    .navbar_link_item{
+        width: 100%;
+    }
+    .navbar_link_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }
+    #mobile_menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile_menu.is-active .bar:nth-child(1){
+        transform: translateY(9px) rotate(45deg);
+    }
+    #mobile_menu.is-active .bar:nth-child(3){
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    /**************************************************Mobile Home Page******************************************************************************/
+
+    /**************************************************Mobile About Us Page******************************************************************************/
+
+    /**************************************************Mobile FAQ Page******************************************************************************/
+    .faq{
+        margin: 0;
+        padding: 0;
+    }
+    .FAQ_Questions{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        padding: 1rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    .card > h2 {
+        font-size: var(--fs-normal);
+    }
+    .card > p{
+        font-size: 1rem;
+    }
+    
+
+    /**************************************************Mobile Contact Us Page******************************************************************************/
+
+
+
+    
 }
