@@ -1,7 +1,7 @@
 /**********************Styles / Colors***********************************************************************/
 :root {
     --ff-style: "Raleway", sans-serif;
-    ;
+    
 
     --fs-normal: 0.9rem;
     --fs-bigger: 1.5rem;
@@ -212,7 +212,7 @@ img {
 }
 
 .instructor_intro {
-    margin: 2vmin 15vmin;
+    margin: 2rem 15rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -231,7 +231,7 @@ img {
     border: #231f20;
     border-style: double;
     border-width: 10px;
-    margin-left: -250px;
+
 }
 
 .instructor_bio {
@@ -240,16 +240,10 @@ img {
 }
 
 .content_infromation {
-    margin: 2vmin 15vmin;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
-    height: 50%;
-    gap: 20rem;
     align-content: center;
     justify-content: center;
     text-align: center;
+  
 }
 
 .learned {
@@ -271,10 +265,17 @@ img {
     text-decoration: none;
     color: var(--clr-blue);
 }
-
+.bpa_information{
+    justify-content: center;
+    align-content: center;
+}
 .bpa_summary {
     text-align: center;
     margin: 0rem 15rem;
+}
+.bpa_logo{
+    max-width: 30rem;
+margin: auto;
 }
 
 /*********************************************Faq Section Styling*****************************************************************************************************************************************/
@@ -304,7 +305,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 3rem auto;
     height: 20rem;
     width: 40rem;
     border-radius: 8px;
@@ -351,7 +352,24 @@ img {
 }
 
 /*********************************************Contact Section Styling*************************************************************************************************************************************/
+.benifits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(to bottom, gray 10%, var(--clr-gray), black);
 
+}
+
+.benifits h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, var(--clr-lightpurple), var(--clr-lightblue), var(--clr-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .Contact_Summary {
     text-align: center;
     font-size: 0.9rem;
@@ -360,10 +378,9 @@ img {
 
 .benifits_wrapper {
     display: grid;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    text-shadow: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
 }
 
 .benifit_card {
@@ -378,6 +395,12 @@ img {
     color: var(--clr-white);
     box-shadow: 0 4px 8px 0 black;
     transition: .3s ease-in-out;
+}
+.benifit_card h2{
+    text-align: center;
+}
+.benifit_card ul {
+    text-align: center;
 }
 
 .benifit_button {
@@ -513,6 +536,10 @@ img {
         transform: translate(5%,20%);
 
     }
+    .navbar_logo{
+        font-size: 1.8rem;
+        margin-left: 0.8rem;
+    }
     .navbar_toggle .bar{
         width: 25px;
         height: 5px;
@@ -581,31 +608,155 @@ img {
     }
 
     /**************************************************Mobile Home Page******************************************************************************/
+    .hero{
+        text-align: center;
 
+    }
+    .Home_Summary{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .Home_Summary > h2{
+        font-size: 1.2rem;
+    }
+    .home_carousel{
+        height: 45rem;
+        width: 45rem;
+    }
     /**************************************************Mobile About Us Page******************************************************************************/
-
+    .instructor_intro{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+    }
+    .instructor_bio{ /*Done needs checked*/
+        display: flex;
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 0.8rem;
+    }
+    .instructor_image{
+        display: flex;
+        margin: auto;
+        grid-column: 1;
+        grid-row: 1;
+        height: 20rem;
+        width: 20rem;
+    }
+    .content_information{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    .bpa_summary{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
     /**************************************************Mobile FAQ Page******************************************************************************/
     .faq{
-        margin: 0;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
         padding: 0;
+        width: 100%;
+    }
+    .faq > h1{
+        color: var(--clr-green);
+        font-size: var(--fs-biggest);
     }
     .FAQ_Questions{
         grid-template-columns: 1fr;
+        margin: 0 20rem;
     }
     .card{
         padding: 1rem;
-        height: 15rem;
-        width: 15rem;
+        height: 25rem;
+        width: 25rem;
+
     }
     .card > h2 {
-        font-size: var(--fs-normal);
+        font-size: 1.5rem;
     }
     .card > p{
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .card:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
     }
     
-
+    .card:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .card:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .card:nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .card:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .card:nth-child(6) {
+        grid-column: 1;
+        grid-row: 6;
+    }
     /**************************************************Mobile Contact Us Page******************************************************************************/
+    .benifits {
+        margin: 0;
+        padding: 0;
+    }
+    .benifits_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .benifit_card{
+        height: 20rem;
+        width: 20rem;
+    }
+    /**************************************************Mobile Footer Page******************************************************************************/
+    .footer_links_wrapper{
+        flex-direction: column;
+
+    }
+    .footer_link_item{
+        display: flex;
+        margin: 0 auto;
+        padding: 0.8rem;
+        width: 100%;
+    }
+    .footer_link_item h2{
+        margin: 0 auto;
+    }
+    .footer_link_item a{
+      margin: 0 auto;
+    }
+    
+    .social_media_wrapper{
+        flex-direction: column;
+        margin-right:50px
+    }
+    .Footer_Text{
+        margin-right:85px;
+        text-align: center;
+        justify-content: center;
+    }
 
 
 
