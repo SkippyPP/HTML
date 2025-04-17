@@ -3,12 +3,11 @@
     --clr-lightpink:  hsl(275, 100%, 97%);
     --clr-grayishpurple: hsl(292, 16%, 49%);
     --clr-darkpurple: hsl(292, 42%, 14%);
+    
 
-    --ff-style: "Work Sans", "sans-serif"
+    --ff-style: "Work Sans", "sans-serif";
 }
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -17,10 +16,9 @@ body{
     align-items: center;
     justify-content: center;
     font-family: var(--ff-style);
-    background: url(../assets/images/background-pattern-mobile.svg) no-repeat top center ;
+    background: url(../assets/images/background-pattern-mobile.svg) no-repeat top;
     background-size: 50rem;
     min-height: 100rem;
-    max-height: 100rem;
     padding: 0;
 }
 
@@ -28,7 +26,7 @@ body{
     background: var(--clr-white);
     display: flex;
     flex-direction: column;
-    border-radius: 1.5rem;
+    border-radius: 1.8rem;
     box-shadow: 0 0.2rem 0.5rem rgb(53, 53, 53);
     width: 90%;
     max-width: 80rem;
@@ -38,8 +36,7 @@ body{
 }
 .wrapper > h1{
     display: flex;
-    align-items: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--clr-darkpurple);
     font-weight: 700;
     gap: 1rem;
@@ -55,16 +52,14 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
     text-align: left;
-    color: var(--clr-darkpurple);
-    font-size: 1.5rem;
-    padding: 1rem ;
+    color: black;
+    font-size: 1.8rem;
+    padding: 1.4rem ;
     font-weight: 600;
     background: none;
     border: none;
     width: 100%;
-    cursor: pointer;
 }
 .header:hover{
 color: var(--clr-grayishpurple);
@@ -76,25 +71,18 @@ color: var(--clr-grayishpurple);
     padding: 0 1rem ;
 }
 .information > P{
-    padding: 0.5rem 0 1rem;
     font-weight: 400;
-    color: var(--clr-grayishpurple);
+    color: black;
     font-size: 1.2rem;
     line-height: 2;
 }
-.attribution{
-    margin-top: 2rem;
-}
+
 
 
 @media screen and (min-width:800px){
 body{
     background: url(../assets/images/background-pattern-desktop.svg) no-repeat top center ;
     background-size: contain;    
-    width: 100%;
-    margin: 0;
-    
-
 }
     
 }
